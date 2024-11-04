@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tecnicos.Data.Context;
+using Tecnicos.Services.DI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var ConStr = builder.Configuration.GetConnectionString("SqlConStr");
-builder.Services.AddDbContextFactory<TecnicosContext>(o => o.UseSqlServer(ConStr));
+//Inject Context
+builder.Services.RegisterServices();
 
 
 var app = builder.Build();
