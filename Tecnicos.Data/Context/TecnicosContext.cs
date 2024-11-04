@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RegistroTecnicos.Api.Models;
+using Tecnicos.Data.Models;
 using System.Collections.Generic;
 
-namespace RegistroTecnicos.Api.Context;
+namespace Tecnicos.Data.Context;
 
 public class TecnicosContext : DbContext
 {

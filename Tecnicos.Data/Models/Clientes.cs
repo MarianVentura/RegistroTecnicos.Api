@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RegistroTecnicos.Api.Models;
+namespace Tecnicos.Data.Models;
 
 public class Clientes
 {

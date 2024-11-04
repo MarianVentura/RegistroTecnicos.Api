@@ -1,5 +1,9 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
-using RegistroTecnicos.Api.Context;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Tecnicos.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
